@@ -1,0 +1,2 @@
+sudo iptables -A INPUT -p icmp --icmp-type echo-request -m limit --limit 2/second -j ACCEPT
+sudo iptables -A INPUT -p icmp --icmp-type echo-request -j DROP
